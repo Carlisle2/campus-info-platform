@@ -1,0 +1,212 @@
+/* major_add.css - 专业新增页面样式 */
+
+h1 {
+    border-bottom: 2px solid #28a745;
+}
+
+/* 表单容器 */
+.major-add-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 表单标题 */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #28a745;
+    font-size: 24px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.form-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #28a745;
+    border-radius: 2px;
+}
+
+/* 表单组 */
+.major-form-group {
+    margin-bottom: 25px;
+}
+
+.major-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.major-form-group label i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+.major-form-group input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.major-form-group input[type="text"]:focus {
+    border-color: #28a745;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.1);
+}
+
+/* 输入框图标 */
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.input-with-icon input {
+    padding-left: 45px !important;
+}
+
+/* 提示信息 */
+.form-hint {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 8px;
+    padding-left: 5px;
+    line-height: 1.4;
+}
+
+.form-hint i {
+    margin-right: 5px;
+    color: #ffc107;
+}
+
+/* 自动生成信息 */
+.auto-generate-info {
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.auto-generate-info p {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.auto-generate-info i {
+    margin-right: 8px;
+    color: #2e7d32;
+}
+
+/* 操作按钮 */
+.major-form-actions {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+}
+
+.major-form-actions .btn {
+    padding: 14px 35px;
+    margin: 0 15px;
+    min-width: 140px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.major-form-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.major-form-actions .btn:active {
+    transform: translateY(0);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #218838 0%, #155724 100%);
+}
+
+/* 成功消息样式 */
+.success-message {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border: 1px solid #b1dfbb;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.success-message h3 {
+    color: #155724;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #0f5132;
+    margin: 5px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .major-add-form-container {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .form-title {
+        font-size: 20px;
+    }
+    
+    .major-form-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .major-form-actions .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .major-form-group input[type="text"] {
+        font-size: 15px;
+        padding: 12px;
+    }
+}

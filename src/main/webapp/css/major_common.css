@@ -1,0 +1,180 @@
+/* major_common.css - 专业管理公共样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    padding-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: #dc3545;
+    border: none;
+    cursor: pointer;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+/* 覆盖h1颜色 */
+h1 {
+    border-bottom: 2px solid #17a2b8;
+}
+
+/* 页面头部 */
+.page-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 提示框 */
+.major-info-box {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-left: 4px solid #17a2b8;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.major-info-box p {
+    margin: 0;
+    color: #0c5460;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.major-info-box p i {
+    margin-right: 5px;
+    color: #17a2b8;
+}
+
+/* 专业编号样式 */
+.major-id-display {
+    background: #e9ecef;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 表单容器 */
+.major-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 专业列表项 */
+.major-list-item {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.major-list-item:hover {
+    background-color: #f8f9fa;
+    border-color: #17a2b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.major-list-item h4 {
+    margin: 0 0 10px 0;
+    color: #17a2b8;
+    font-size: 16px;
+}
+
+.major-list-item p {
+    margin: 5px 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* 操作按钮容器 */
+.major-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* 统计卡片 */
+.stats-card {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stats-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.stats-card .count {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 专业标签 */
+.major-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .major-form-container {
+        padding: 15px;
+    }
+    
+    .major-list-item {
+        padding: 12px;
+    }
+    
+    .stats-card {
+        padding: 15px;
+    }
+    
+    .stats-card .count {
+        font-size: 24px;
+    }
+}

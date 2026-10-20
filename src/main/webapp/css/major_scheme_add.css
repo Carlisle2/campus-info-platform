@@ -1,0 +1,191 @@
+/* major_scheme_add.css - 培养方案新增页面样式 */
+
+/* 主容器样式 */
+.scheme-add-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    position: relative;
+}
+
+/* 标题样式 */
+.scheme-add-title {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* 返回链接 */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* 消息提示 */
+.scheme-message {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.scheme-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.scheme-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* 表单区域 */
+.scheme-form-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+}
+
+/* 表单组 */
+.scheme-form-group {
+    margin-bottom: 20px;
+}
+
+.scheme-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+    font-size: 15px;
+}
+
+.scheme-form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.scheme-form-group input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* 表单按钮 */
+.scheme-form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.scheme-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    min-width: 120px;
+}
+
+.scheme-btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.scheme-btn-primary:hover {
+    background: #0056b3;
+}
+
+.scheme-btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.scheme-btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* 输入框提示 */
+.placeholder-hint {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* 必填标记 */
+.required-mark {
+    color: #dc3545;
+}
+
+/* 表单验证提示 */
+.validation-error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* 加载状态 */
+.loading-spinner {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .scheme-add-container {
+        padding: 15px;
+    }
+    
+    .scheme-form-section {
+        padding: 15px;
+    }
+    
+    .scheme-form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .scheme-btn {
+        width: 100%;
+        min-width: auto;
+    }
+}

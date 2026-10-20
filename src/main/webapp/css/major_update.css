@@ -1,0 +1,278 @@
+/* major_update.css - 专业修改页面样式 */
+
+h1 {
+    border-bottom: 2px solid #ffc107;
+}
+
+/* 表单容器 */
+.major-update-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 表单标题 */
+.update-form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffc107;
+    font-size: 24px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.update-form-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #ffc107;
+    border-radius: 2px;
+}
+
+/* 只读信息显示 */
+.readonly-info {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.readonly-info h3 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.readonly-info h3 i {
+    margin-right: 8px;
+    color: #856404;
+}
+
+.readonly-info .major-id-value {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d39e00;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.readonly-info .hint {
+    font-size: 12px;
+    color: #856404;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* 当前信息 */
+.current-info-box {
+    background: #e3f2fd;
+    border: 1px solid #bbdefb;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.current-info-box p {
+    margin: 0;
+    color: #0c5460;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.current-info-box i {
+    margin-right: 8px;
+    color: #17a2b8;
+}
+
+/* 表单组 */
+.major-update-form-group {
+    margin-bottom: 25px;
+}
+
+.major-update-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.major-update-form-group label i {
+    margin-right: 8px;
+    color: #17a2b8;
+}
+
+.major-update-form-group input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.major-update-form-group input[type="text"]:focus {
+    border-color: #17a2b8;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(23, 162, 184, 0.1);
+}
+
+/* 输入框图标 */
+.update-input-with-icon {
+    position: relative;
+}
+
+.update-input-with-icon i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.update-input-with-icon input {
+    padding-left: 45px !important;
+}
+
+/* 操作按钮 */
+.major-update-actions {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.major-update-actions .btn {
+    padding: 14px 35px;
+    min-width: 140px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.major-update-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.major-update-actions .btn:active {
+    transform: translateY(0);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    border: none;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e0a800 0%, #c69500 100%);
+}
+
+/* 警告信息 */
+.warning-message {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border: 1px solid #ffdf7e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.warning-message h3 {
+    color: #856404;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning-message h3 i {
+    margin-right: 8px;
+}
+
+.warning-message p {
+    color: #856404;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* 错误状态 */
+.error-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #721c24;
+}
+
+.error-state i {
+    font-size: 48px;
+    color: #f5c6cb;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.error-state h2 {
+    margin-bottom: 15px;
+    color: #721c24;
+}
+
+.error-state p {
+    margin-bottom: 25px;
+    color: #721c24;
+    font-size: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .major-update-form-container {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .update-form-title {
+        font-size: 20px;
+    }
+    
+    .major-update-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .major-update-actions .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .readonly-info .major-id-value {
+        font-size: 20px;
+    }
+    
+    .major-update-form-group input[type="text"] {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
